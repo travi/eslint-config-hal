@@ -1,0 +1,6 @@
+_extends: .github
+repository:
+  name: eslint-config-hal
+  description: Shareable config for ESLint for producers and consumers of HAL APIs
+  homepage: 'https://npm.im/@travi/eslint-config-hal'
+  private: false
