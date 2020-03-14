@@ -18,7 +18,8 @@
     "lint:js": "eslint .",
     "lint:md": "remark . --frail",
     "lint:sensitive": "ban",
-    "lint:travis": "travis-lint .travis.yml"
+    "lint:travis": "travis-lint .travis.yml",
+    "lint:peer": "npm ls >/dev/null"
   },
   "devDependencies": {
     "@travi/eslint-config": "1.0.23",
