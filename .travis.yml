@@ -1,6 +1,0 @@
-version: ~> 1.0
-notifications:
-  email: false
-import:
-  - form8ion/.travis-ci:node.yml
-  - travi/.travis-ci:authenticated-sematnic-release.yml
