@@ -18,7 +18,8 @@
     "lint:js": "eslint .",
     "lint:md": "remark . --frail",
     "lint:sensitive": "ban",
-    "lint:peer": "npm ls >/dev/null"
+    "lint:peer": "npm ls >/dev/null",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@travi/eslint-config": "1.0.94",
