@@ -3,23 +3,28 @@
   "description": "Shareable config for ESLint for producers and consumers of HAL APIs",
   "license": "MIT",
   "version": "0.0.0-semantically-released",
-  "files": [
-    "index.js"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
+  "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
   "repository": "travi/eslint-config-hal",
   "bugs": "https://github.com/travi/eslint-config-hal/issues",
   "homepage": "https://npm.im/@travi/eslint-config-hal",
-  "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
   "scripts": {
     "test": "npm-run-all --print-label --parallel lint:*",
     "lint:js": "eslint .",
     "lint:md": "remark . --frail",
     "lint:sensitive": "ban",
     "lint:peer": "npm ls >/dev/null",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint:publish": "publint --strict"
+  },
+  "files": [
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "dependencies": {
+    "@form8ion/eslint-config-hal": "1.0.0"
   },
   "devDependencies": {
     "@travi/eslint-config": "3.0.31",
@@ -28,10 +33,8 @@
     "cz-conventional-changelog": "3.3.0",
     "husky": "8.0.3",
     "npm-run-all": "4.1.5",
+    "publint": "0.1.12",
     "remark-cli": "11.0.0",
     "remark-preset-lint-travi": "5.0.2"
-  },
-  "dependencies": {
-    "@form8ion/eslint-config-hal": "1.0.0"
   }
 }
