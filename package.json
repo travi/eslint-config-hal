@@ -27,7 +27,7 @@
     "@form8ion/eslint-config-hal": "1.0.0"
   },
   "devDependencies": {
-    "@travi/eslint-config": "5.0.4",
+    "@travi/eslint-config": "5.0.5",
     "ban-sensitive-files": "1.10.1",
     "commitlint-config-travi": "1.4.44",
     "cz-conventional-changelog": "3.3.0",
